@@ -30,3 +30,12 @@ go.work.sum
 # Editor/IDE
 # .idea/
 # .vscode/
+
+# Hugo specific
+public/
+resources/_gen/
+.hugo_build.lock
+
+# Local development
+.DS_Store
+Thumbs.db
