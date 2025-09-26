@@ -34,7 +34,7 @@ editPost:
     appendFilePath: true
 ---
 
-# Welcome to My ML Research Blog! 🚀
+# Welcome to My ML Research Blog!
 
 Hello and welcome to my machine learning research blog! This platform is designed to share cutting-edge insights, research findings, and practical applications in the world of artificial intelligence and deep learning.
 
@@ -52,23 +52,23 @@ This blog covers a wide range of topics in machine learning:
 
 This blog is built with modern web technologies to provide the best reading experience:
 
-### ✅ Hugo Static Site Generation
+### Hugo Static Site Generation
 - **Lightning Fast**: Built with Hugo for optimal performance
 - **SEO Optimized**: Built-in SEO features for better discoverability
 - **Mobile Responsive**: Looks great on all devices
 
-### ✅ Rich Content Support
+### Rich Content Support
 - **Markdown Writing**: All posts are written in clean Markdown
 - **Code Highlighting**: Syntax highlighting for multiple programming languages
 - **LaTeX Math**: Full mathematical expression support
 - **Image Support**: High-quality images and diagrams
 
-### ✅ Interactive Features
+### Interactive Features
 - **Like/Dislike Buttons**: Powered by Lyket for reader engagement
 - **Social Sharing**: Easy sharing across platforms
 - **Search Functionality**: Find content quickly
 
-### ✅ Modern Development Workflow
+### Modern Development Workflow
 - **Version Control**: All content is version controlled with Git
 - **Automated Deployment**: GitHub Actions for continuous deployment
 - **GitHub Pages**: Hosted on GitHub Pages for reliability
@@ -124,7 +124,7 @@ I'm excited to share this journey with you. Whether you're a researcher, student
 
 Feel free to suggest improvements or topics you'd like to see covered using the "Suggest Changes" link on each post.
 
-Happy learning! 🎓
+Happy learning!
 
 ---
 
