@@ -15,12 +15,12 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="lyket-like-button-container">
                 <div data-lyket-type="like" data-lyket-id="${buttonId}" data-lyket-template="simple">
                     <button class="lyket-button" data-lyket-total-count="${buttonId}-likes">
-                        👍 <span>0</span>
+                        Like <span>0</span>
                     </button>
                 </div>
                 <div data-lyket-type="like" data-lyket-id="${buttonId}-dislike" data-lyket-template="simple">
                     <button class="lyket-button lyket-button--disliked" data-lyket-total-count="${buttonId}-dislikes">
-                        👎 <span>0</span>
+                        Dislike <span>0</span>
                     </button>
                 </div>
             </div>
@@ -55,7 +55,7 @@ function createMockLyketButtons() {
             }, 150);
             
             // Add liked/disliked state
-            if (button.textContent.includes('👍')) {
+            if (button.textContent.includes('Like')) {
                 button.classList.toggle('lyket-button--liked');
             } else {
                 button.classList.toggle('lyket-button--disliked');

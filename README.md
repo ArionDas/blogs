@@ -2,15 +2,15 @@
 
 A modern, fast, and feature-rich blog built with Hugo and the PaperMod theme. Perfect for machine learning research, technical content, and academic writing.
 
-## ✨ Features
+## Features
 
-### 🚀 **Performance & Technology**
+### **Performance & Technology**
 - **Hugo Static Site Generator**: Lightning-fast site generation and loading
 - **PaperMod Theme**: Clean, modern, and responsive design
 - **GitHub Pages Deployment**: Automated deployment with GitHub Actions
 - **Version Control**: All content versioned with Git
 
-### 📝 **Content Features**
+### **Content Features**
 - **Markdown Writing**: Write posts in clean, readable Markdown
 - **Code Highlighting**: Syntax highlighting for 100+ programming languages
 - **LaTeX Math Support**: Full mathematical expression rendering with MathJax
@@ -19,19 +19,19 @@ A modern, fast, and feature-rich blog built with Hugo and the PaperMod theme. Pe
 - **Reading Time**: Estimated reading time for each post
 - **Search Functionality**: Fast client-side search
 
-### 🎯 **Interactive Elements**
+### **Interactive Elements**
 - **Like/Dislike Buttons**: Powered by Lyket for reader engagement
 - **Social Sharing**: Share posts across platforms
 - **Comments System**: Ready for integration with various comment systems
 - **Dark/Light Mode**: Theme toggle for better reading experience
 
-### 🔧 **Developer Experience**
+### **Developer Experience**
 - **Live Reload**: Local development server with hot reload
 - **SEO Optimized**: Built-in SEO features and meta tags
 - **Mobile Responsive**: Looks great on all devices
 - **Fast Builds**: Optimized build process
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - [Hugo Extended](https://gohugo.io/installation/) (v0.135.0 or later)
@@ -58,7 +58,7 @@ A modern, fast, and feature-rich blog built with Hugo and the PaperMod theme. Pe
 
 4. **Open your browser** and navigate to `http://localhost:1313`
 
-## 📖 Creating Content
+## Creating Content
 
 ### Create a New Post
 
@@ -126,7 +126,7 @@ Add interactive buttons to your posts:
 <div id="lyket-like-my-post-id"></div>
 ```
 
-## 🎨 Customization
+## Customization
 
 ### Site Configuration
 
@@ -157,7 +157,7 @@ Create `assets/css/extended/custom.css`:
 }
 ```
 
-## 🚀 Deployment
+## Deployment
 
 ### GitHub Pages (Recommended)
 
@@ -186,7 +186,7 @@ hugo --gc --minify
 - **Firebase Hosting**: Use Firebase CLI
 - **AWS S3**: Sync public/ directory to S3 bucket
 
-## 🔧 Development
+## Development
 
 ### Project Structure
 
@@ -230,7 +230,7 @@ git submodule update --remote themes/PaperMod
 3. **Port Configuration**: Use `hugo server --port 8080` for custom port
 4. **Bind Address**: Use `hugo server --bind 0.0.0.0` to access from other devices
 
-## 🔐 Configuration
+## Configuration
 
 ### Environment Variables
 
@@ -258,7 +258,7 @@ params:
 2. Get your API key
 3. Replace the placeholder in `layouts/partials/extend_footer.html`
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -266,17 +266,17 @@ params:
 4. Test locally
 5. Submit a pull request
 
-## 📄 License
+## License
 
 This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
 
-## 🆘 Support
+## Support
 
 - **Documentation**: [Hugo Documentation](https://gohugo.io/documentation/)
 - **Theme**: [PaperMod Documentation](https://github.com/adityatelange/hugo-PaperMod)
 - **Issues**: Create an issue in this repository
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [Hugo](https://gohugo.io/) - The world's fastest framework for building websites
 - [PaperMod](https://github.com/adityatelange/hugo-PaperMod) - A fast, clean, responsive Hugo theme
@@ -285,6 +285,6 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 
 ---
 
-**Happy blogging!** 🎉
+**Happy blogging!**
 
 Perfect for ML model blogs with math rendering, code highlighting, fast deployment, and interactive features!

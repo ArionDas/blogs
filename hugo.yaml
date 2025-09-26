@@ -76,7 +76,7 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Hi there! 👋"
+    Title: "Hi there!"
     Content: Welcome to my machine learning research blog. Here I share insights about deep learning, AI research, model development, and more.
 
   socialIcons:
