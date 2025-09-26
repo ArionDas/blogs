@@ -1,0 +1,80 @@
+{{/* Lyket Like/Dislike Buttons */}}
+<script src="https://unpkg.com/@lyket/widget@latest/dist/lyket.js?apiKey=pt_1234567890abcdef"></script>
+
+<script>
+// Initialize Lyket buttons when DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize like buttons for each post
+    const likeButtons = document.querySelectorAll('[id^="lyket-like-"]');
+    
+    likeButtons.forEach(function(button) {
+        const buttonId = button.id.replace('lyket-like-', '');
+        
+        // Create like/dislike button container
+        button.innerHTML = `
+            <div class="lyket-like-button-container">
+                <div data-lyket-type="like" data-lyket-id="${buttonId}" data-lyket-template="simple">
+                    <button class="lyket-button" data-lyket-total-count="${buttonId}-likes">
+                        👍 <span>0</span>
+                    </button>
+                </div>
+                <div data-lyket-type="like" data-lyket-id="${buttonId}-dislike" data-lyket-template="simple">
+                    <button class="lyket-button lyket-button--disliked" data-lyket-total-count="${buttonId}-dislikes">
+                        👎 <span>0</span>
+                    </button>
+                </div>
+            </div>
+        `;
+    });
+    
+    // Note: In a real deployment, you would replace 'pt_1234567890abcdef' with your actual Lyket API key
+    // and uncomment the following line to initialize Lyket:
+    // lyket.init({ apiKey: 'your-actual-api-key-here' });
+    
+    // For demo purposes, we'll create a simple mock implementation
+    createMockLyketButtons();
+});
+
+function createMockLyketButtons() {
+    const buttons = document.querySelectorAll('.lyket-button');
+    
+    buttons.forEach(function(button) {
+        let count = Math.floor(Math.random() * 50); // Random initial count
+        const countSpan = button.querySelector('span');
+        countSpan.textContent = count;
+        
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            count++;
+            countSpan.textContent = count;
+            
+            // Visual feedback
+            button.style.transform = 'scale(1.1)';
+            setTimeout(() => {
+                button.style.transform = 'scale(1)';
+            }, 150);
+            
+            // Add liked/disliked state
+            if (button.textContent.includes('👍')) {
+                button.classList.toggle('lyket-button--liked');
+            } else {
+                button.classList.toggle('lyket-button--disliked');
+            }
+        });
+    });
+}
+</script>
+
+{{/* Analytics and Performance */}}
+<script>
+// Simple analytics tracking for blog engagement
+function trackPageView(pageName) {
+    // In a real implementation, you would send this to your analytics service
+    console.log('Page view:', pageName, new Date().toISOString());
+}
+
+// Track page views
+if (window.location.pathname) {
+    trackPageView(window.location.pathname);
+}
+</script>

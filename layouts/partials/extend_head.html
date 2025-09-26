@@ -1,0 +1,71 @@
+{{/* MathJax Support */}}
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']],
+    processEscapes: true,
+    processEnvironments: true
+  },
+  options: {
+    skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+};
+
+window.addEventListener('load', (event) => {
+    document.querySelectorAll("mjx-container").forEach(function(x){
+      x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+{{/* Lyket CSS for like buttons */}}
+<style>
+.lyket-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+  font-size: 1rem;
+}
+
+.lyket-button:hover {
+  background-color: var(--theme);
+  opacity: 0.8;
+}
+
+.lyket-button--liked {
+  color: #e74c3c;
+}
+
+.lyket-button--disliked {
+  color: #95a5a6;
+}
+
+.lyket-like-button-container {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .lyket-like-button-container {
+    gap: 0.5rem;
+  }
+  
+  .lyket-button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+</style>
