@@ -62,9 +62,49 @@ A modern, fast, and feature-rich blog built with Hugo and the PaperMod theme. Pe
 
 ### Create a New Post
 
+Hugo provides templates (called archetypes) to help you quickly create new posts with pre-filled structure and placeholders. Choose the appropriate template based on your content type:
+
+#### Using Templates
+
+**For Model/Architecture Posts** (e.g., GPT, BERT, ResNet):
+```bash
+hugo new content posts/my-model-name.md --kind model-family
+```
+
+**For System Design Posts** (e.g., distributed systems, scalability patterns):
+```bash
+hugo new content posts/my-system-design.md --kind system-design
+```
+
+**For Knowledge/Tutorial Posts** (e.g., RL, attention mechanisms, NLP concepts):
+```bash
+hugo new content posts/my-topic.md --kind topic-knowledge
+```
+
+**For Basic Posts** (default template):
 ```bash
 hugo new content posts/my-new-post.md
 ```
+
+#### Available Templates
+
+The repository includes four archetypes in the `archetypes/` directory:
+
+1. **`model-family.md`** - Comprehensive template for writing about ML models and architectures
+   - Includes sections for architecture overview, mathematical foundations, implementation, training details, and comparisons
+   - Perfect for: GPT, BERT, Transformers, ResNet, LSTM, etc.
+
+2. **`system-design.md`** - Template for system design and architecture patterns
+   - Includes sections for requirements, architecture, scalability, trade-offs, and best practices
+   - Perfect for: Distributed systems, microservices, caching strategies, load balancing, etc.
+
+3. **`topic-knowledge.md`** - Template for educational content and concept explanations
+   - Includes sections for fundamentals, mathematical foundations, examples, and applications
+   - Perfect for: Reinforcement Learning, attention mechanisms, NLP concepts, optimization algorithms, etc.
+
+4. **`default.md`** - Simple template for general posts
+
+All templates are fully configurable - edit them in the `archetypes/` directory to customize the structure for your needs.
 
 ### Post Structure
 
